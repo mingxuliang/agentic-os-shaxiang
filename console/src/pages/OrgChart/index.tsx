@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import KPIDashboard from './components/KPIDashboard';
 import OrgChart from './components/OrgChart';
-import NewsHub from '@/pages/Workbench/components/news/NewsHub';
 import { backendToOrgNode, calcKpiStats, orgData as staticFallback, type KpiStats } from './components/orgData';
 import type { OrgNode } from './components/orgData';
 import { departmentApi } from '@/api/modules/department';
@@ -99,8 +98,6 @@ export default function OrgChartPage() {
         </section>
 
       </div>
-
-      <NewsHub />
     </div>
   );
 }
